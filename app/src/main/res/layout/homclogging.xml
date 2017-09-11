@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Status?"
+                android:id="@+id/get_status"
+                android:layout_weight="1"/>
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:id="@+id/clear"
+                android:layout_weight="1"/>
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Raspi"
+                android:id="@+id/askraspberry"
+                android:layout_weight="1"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cycle"
+                android:id="@+id/cycle"
+                android:layout_column="3"/>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/scrollView"
+                android:fillViewport="false"
+                android:layout_weight="2"
+                android:layout_span="2">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/log"
+                    android:layout_weight="1"
+                    android:layout_column="15"/>
+        </ScrollView>
+
+    </TableRow>
+
+</TableLayout>
+
